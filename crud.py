@@ -43,7 +43,7 @@ def inputStudentEmail():
       email = input("Enter email: ")
       break
     except Exception as e:
-      print("Error: Enter again!")
+      print("ERROR! Invalid input: Enter input again!")
       continue
   return email
     
@@ -59,7 +59,7 @@ def inputStudentID():
       id = int(input("Enter id: "))
       break
     except Exception as e:
-      print("Error: Enter again!")
+      print("ERROR! Invalid input: Enter input again!")
       continue
   return id
 
@@ -77,7 +77,7 @@ def inputStudentFname():
       firstName = input("Enter firstName: ")
       break
     except Exception as e:
-      print("Error: Enter again!")
+      print("ERROR! Invalid input: Enter input again!")
       continue
   return firstName
 
@@ -94,7 +94,7 @@ def inputStudentLname():
       lname = input("Enter lname: ")
       break
     except Exception as e:
-      print("Error: Enter again!")
+      print("ERROR! Invalid input: Enter input again!")
       continue
   return lname
 
@@ -119,7 +119,7 @@ def inputStudentEnrollment():
       break
     except Exception as e:
       print(e)
-      print("Error: Enter again!")
+      print("ERROR! Invalid input: Enter input again!")
       continue
   return date
 
@@ -232,7 +232,6 @@ def main():
     elif(choice == "2"):
       print("Enter Student Records:")
       addStudent(inputStudentEmail(), inputStudentFname(), inputStudentLname(), inputStudentEnrollment(), conn)
-      
     elif(choice == "3"):
       print("Enter Student to find and email to replace.")
       updateStudentEmail(inputStudentID(), inputStudentEmail(), conn)

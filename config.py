@@ -6,10 +6,8 @@ from configparser import ConfigParser
     Loads configuration parameters from a specified section in a configuration file.
 """
 def load_config(filename='database.ini', section='postgresql'):
-
     config = ConfigParser()
     config.read('database.ini')
-
     # get section, default to postgresql
     configObj = {}
     if config.has_section(section):
