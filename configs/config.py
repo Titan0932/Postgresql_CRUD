@@ -1,15 +1,15 @@
 from configparser import ConfigParser
 
 
-
 """
     Loads configuration parameters from a specified section in a configuration file.
 """
-def load_config(filename='database.ini', section='postgresql'):
+def load_config(filename='./configs/database.ini', section='postgresql'):
     config = ConfigParser()
-    config.read('database.ini')
+    config.read(filename)
     # get section, default to postgresql
     configObj = {}
+    print(config.sections())
     if config.has_section(section):
         params = config.items(section)
         print("Printing params: ", params)

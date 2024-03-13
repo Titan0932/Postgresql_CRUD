@@ -1,7 +1,7 @@
 import datetime
 import time
 import psycopg2
-from config import load_config
+from configs.config import load_config
 
 """
   Display a menu for user selection and return an input.
@@ -232,6 +232,7 @@ def main():
     elif(choice == "2"):
       print("Enter Student Records:")
       addStudent(inputStudentEmail(), inputStudentFname(), inputStudentLname(), inputStudentEnrollment(), conn)
+      
     elif(choice == "3"):
       print("Enter Student to find and email to replace.")
       updateStudentEmail(inputStudentID(), inputStudentEmail(), conn)

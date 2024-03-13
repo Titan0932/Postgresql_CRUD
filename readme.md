@@ -13,7 +13,7 @@
 3. install dependencies:
     `pip install -r requirements.txt`
 
-4. Create "database.ini" file and copy contents of "database_sample.ini" in it.
+4. Create "configs/database.ini" file and copy contents of "configs/database_sample.ini" in it.
 5. Enter the DB host, dbname, username and password in "database.ini"
 6. run the python file:
     `python ./crud.py` or `python3 ./crud.py`
