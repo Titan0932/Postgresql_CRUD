@@ -4,14 +4,17 @@
 
 ## Instructions:
 
-1. run the virtual env:
+1. Install the venv
+    `python -m venv venv`
+
+2. run the virtual env:
     `venv/scripts/activate`
 
-2. install dependencies:
+3. install dependencies:
     `pip install -r requirements.txt`
 
-3. rename "database_sample.ini" to "database.ini"
-4. Enter the DB host, dbname, username and password in database.ini
-5. run the python file:
+4. rename "database_sample.ini" to "database.ini"
+5. Enter the DB host, dbname, username and password in database.ini
+6. run the python file:
     `python ./crud.py` or `python3 ./crud.py`
-6. Follow the instructions
+7. Follow the instructions
